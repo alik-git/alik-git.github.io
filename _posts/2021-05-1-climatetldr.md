@@ -35,7 +35,7 @@ Clicking once excludes it from the graph.
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="/assets/figs/file.html" height="700" width="100%"></iframe>
 
-This is currently a work in progress.
+This is currently a work in progress. Feel free to reach out if you'd like to help!
 
 More coming sooooon!!!!
 
