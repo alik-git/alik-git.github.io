@@ -62,7 +62,6 @@ Landscape: [(Direct Link Here)](/assets/img/project_assets/bayes/bayes_poster.pd
 
 And you can check out the code [here](https://github.com/MikeS96/bayesbb).
 
-<!-- {% linkpreview "" %} -->
 
 
 ### Project Report:
