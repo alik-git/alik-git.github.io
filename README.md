@@ -1,4 +1,6 @@
-# al-folio
+# Ali's Website Repo
+
+This is the readme for the github repo of Ali Kuwajerwala's personal website. If you're looking for the al-folio readme, you're in the wrong place, you need to go [here](https://github.com/alshedivat/al-folio).
 
 <div align="center">
 
@@ -192,7 +194,7 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
 
 ## Table Of Contents
 
-- [al-folio](#al-folio)
+- [Ali's Website Repo](#alis-website-repo)
   - [User community](#user-community)
   - [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
     - [Desktop](#desktop)
