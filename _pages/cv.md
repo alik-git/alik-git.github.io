@@ -1,11 +1,10 @@
 ---
-layout: cv
+layout: redirect
 permalink: /cv/
 title: cv
+description: My current resume
+rurl: /cv.pdf
 nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
 ---
+
+Placeholder text for the resume page, you should probably not be seeing this lol.
