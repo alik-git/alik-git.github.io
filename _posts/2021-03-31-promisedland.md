@@ -1,9 +1,11 @@
 ---
-layout: page
+layout: post
 title: "Casual Book Review: A Promised Land"
+date: 2021-03-31 15:09:00
 description: by Barack Obama
-img: https://images2.penguinrandomhouse.com/cover/9781524763169
-importance: 1
+tags: book-review
+# img: https://images2.penguinrandomhouse.com/cover/9781524763169
+# importance: 1
 # permalink: /promisedland/
 ---
 
