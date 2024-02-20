@@ -32,6 +32,19 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
+        <!-- Ali!!! Begin changes for adding the second image -->
+        {% if page.profile.image_long %}
+          {% assign profile_image_long_path = page.profile.image_long | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_long_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_long_class = 'img-fluid z-depth-1 rounded' %}
+          {% endif %}
+          {%
+            include figure.liquid loading="eager" path=profile_image_long_path class=profile_image_long_class sizes=sizes alt=page.profile.image_long cache_bust=true
+          %}
+        {% endif %}
+        <!-- Ali!!! End of changes -->
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}

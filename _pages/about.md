@@ -7,6 +7,7 @@ subtitle: Master's student in AI & Robotics @ Mila/UdeM
 profile:
   align: right
   image: prof_pic.jpg
+  image_long: prof_pic_long.jpg
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
