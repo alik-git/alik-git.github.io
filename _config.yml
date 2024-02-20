@@ -124,7 +124,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: writingPractice # blog_name will be displayed in your blog page
-blog_description: Just books I read and thoughts I have
+blog_description: It ain't what you don't know that gets you, it's what you know that just ain't so 
 permalink: /blog/:year/:title/
 
 # Pagination
