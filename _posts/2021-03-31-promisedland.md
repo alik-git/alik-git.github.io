@@ -24,7 +24,7 @@ To be honest, I'm not entirely sure. But I think this book is certainly one plac
 
 As former US President Barack Obama walks you through his first term in office, it's almost impossible not to be impressed by the depth of his understanding of the forces driving change in our world; and awed by the clarity of his introspection.
 
-Put yourself in his shoes. No really, _try it_.
+Put yourself in his shoes.
 
 - Imagine being tasked with charting your country's path to recovery from the worst financial crisis in your lifetime. 
 - Imagine being tasked with developing the affordable healthcare infrastructure that will support millions of your nation's most vulnerable citizens.
