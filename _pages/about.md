@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 
-Hi there! 😃
+Hi there! 😃 
 
 My name is Ali and I'm a soon-to-be-graduating master's student at [Mila][Mila] & the [University of Montréal][UdeM], supervised by [Prof. Liam Paull][lp] at the [Montreal Robotics and Embodied AI Lab][mlab]. I'm quite passionate about AI and robotics research, and engaged in the quest to understand and simulate intelligence. The [ConceptFusion][cf_paper] and [ConceptGraphs][cg_paper] papers which I worked on during my masters are small steps towards this goal.
 
