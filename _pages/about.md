@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Master's student in AI & Robotics @ Mila/UdeM
+subtitle: Robotics and AI, Researcher and Engineer
 
 profile:
   align: right
