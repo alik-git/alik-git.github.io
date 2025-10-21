@@ -23,7 +23,7 @@ social: true # includes social icons at the bottom of the page
 
 Hi there! 😃 
 
-My name is Ali, and I'm quite passionate about AI and robotics research! You could say I'm engaged in the quest to understand and simulate intelligence.
+My name is Ali, and I'm quite passionate about AI and robotics research! You could say I'm engaged in the quest to understand and simulate intelligence. 
 
 **I am currently actively seeking out full-time roles. I'm open to relocation and non-robotics roles, what matters to me is working on important problems! You can take a look at my resume [here][cv]. If you'd like to get in touch, please don't hesitate to email me at ali.hqk@x, x=gmail.com, or on Twitter/LinkedIn!**
 
