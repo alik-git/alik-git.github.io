@@ -18,8 +18,8 @@ toc:
 <link rel="stylesheet" href="/assets/blog/visuallearn/css/perceptron.css">
 
 I recently read Anil Ananthaswamy's great book [Why Machines Learn](https://anilananthaswamy.com/why-machines-learn).
-Most of the actual machine learning content was not new to me, but the story behind its development mostly was!
-While reading it, I found myself wishing that the visuals were better, so I made this blog post to accompany the book. I hope it helps!
+I enjoyed learning about the story behind the development of deep learning, most of which I didn't know!
+While reading it, I repeatedly found myself wishing that the visuals were better, so I made this blog post to accompany the book. I hope it helps!
 
 We start with Frank Rosenblatt's development of the perceptron, one of the first neural networks.
 
