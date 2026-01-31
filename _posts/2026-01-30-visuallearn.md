@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: "Visualizing Why Machines Learn"
-description: Interactive visual aids for understanding machine learning fundamentals
+description: Interactive visuals to accompany the book. 
 date: 2026-01-30 15:09:00
 tags: machine-learning visualization
 authors:
@@ -16,6 +16,12 @@ toc:
 ---
 
 <link rel="stylesheet" href="/assets/blog/visuallearn/css/perceptron.css">
+
+I recently read Anil Ananthaswamy's great book [Why Machines Learn](https://anilananthaswamy.com/why-machines-learn).
+Most of the actual machine learning content was not new to me, but the story behind its development mostly was!
+While reading it, I found myself wishing that the visuals were better, so I made this blog post to accompany the book. I hope it helps!
+
+We start with Frank Rosenblatt's development of the perceptron, one of the first neural networks.
 
 ## The Perceptron
 
