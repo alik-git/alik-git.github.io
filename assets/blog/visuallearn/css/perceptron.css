@@ -1,0 +1,118 @@
+.perceptron-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.perceptron-container canvas {
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #0f0f23;
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+}
+
+.perceptron-container .controls {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.perceptron-container button {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #2a2a4a;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.perceptron-container button:hover {
+  background: #3a3a6a;
+}
+
+.perceptron-container .info {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.perceptron-container .info span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.perceptron-container .slider-row {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.perceptron-container .slider-row label {
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.perceptron-container .slider-row label span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.perceptron-container input[type="range"] {
+  width: 200px;
+  accent-color: #4a9eff;
+}
+
+#perceptron-log {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: 240px;
+  overflow-y: auto;
+  background: #0a0a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #aaa;
+}
+
+#perceptron-log .step-header {
+  color: #4a9eff;
+  font-weight: 600;
+  display: block;
+  margin-top: 0.4rem;
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+#perceptron-log .converged {
+  color: #00ff88;
+  font-weight: 600;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+#perceptron-log .boundary { color: #c0c0c0; }
+#perceptron-log .weights { color: #888; }
+#perceptron-log .delta-pos { color: #00cc66; }
+#perceptron-log .delta-neg { color: #ff6b6b; }
+#perceptron-log .blue { color: #4a9eff; }
+#perceptron-log .red { color: #ff6b6b; }
+#perceptron-log .miss { color: #ffcc00; }
+#perceptron-log .ok { color: #00cc66; }
+#perceptron-log .dim { color: #555; }
+#perceptron-log .line { display: block; padding-left: 0.75rem; }
