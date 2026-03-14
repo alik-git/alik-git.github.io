@@ -36,3 +36,9 @@ Updated `Gemfile` and the plugin-related `_config.yml` settings to match the cur
 
 ## 2026-03-14 16:40 - Plugin compatibility fix
 Removed `jekyll-3rd-party-libraries` after confirming the repo still uses hardcoded third-party asset references and does not define the `third_party_libraries` config block that plugin expects.
+
+## 2026-03-14 17:01 - Local preview setup
+Set up native local preview with `rbenv` Ruby `3.2.10`; to complete responsive image generation locally, run `sudo apt-get update && sudo apt-get install -y imagemagick`.
+
+## 2026-03-14 17:11 - Archive layout fixed
+Added the missing shared `archive` layout so blog year/tag archive pages match the current upstream archive system and stop warning during local builds.
