@@ -40,13 +40,25 @@ ninja.data = [
       {%- else -%}
         {
           {%- assign title = p.title | escape | strip -%}
-          {%- if p.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = p.url -%}{%- endif -%}
+          {%- if p.redirect contains '://' -%}
+            {%- assign url = p.redirect -%}
+          {%- elsif p.redirect -%}
+            {%- assign url = p.redirect | relative_url -%}
+          {%- elsif p.permalink contains "/blog/" -%}
+            {%- assign url = "/blog/" -%}
+          {%- else -%}
+            {%- assign url = p.url -%}
+          {%- endif -%}
           id: "nav-{{ title | slugify }}",
           title: "{{ title | truncatewords: 13 }}",
           description: "{{ p.description | strip_html | strip_newlines | escape | strip }}",
           section: "Navigation",
           handler: () => {
-            window.location.href = "{{ url | relative_url }}";
+            {% if p.redirect contains '://' %}
+              window.location.href = "{{ url }}";
+            {% else %}
+              window.location.href = "{{ url }}";
+            {% endif %}
           },
         },
       {%- endif -%}
@@ -93,7 +105,13 @@ ninja.data = [
           section: "{{ collection.label | capitalize }}",
           {%- unless item.inline -%}
             handler: () => {
-              window.location.href = "{{ item.url | relative_url }}";
+              {% if item.redirect contains '://' %}
+                window.location.href = "{{ item.redirect }}";
+              {% elsif item.redirect %}
+                window.location.href = "{{ item.redirect | relative_url }}";
+              {% else %}
+                window.location.href = "{{ item.url | relative_url }}";
+              {% endif %}
             },
           {%- endunless -%}
         },
