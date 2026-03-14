@@ -30,3 +30,6 @@ Updated `.github/workflows/deploy.yml` to match current upstream trigger coverag
 
 ## 2026-03-14 16:31 - Workflow cache fix
 Added `requirements.txt` with `nbconvert` so the new `actions/setup-python` cache step has the dependency file it expects.
+
+## 2026-03-14 16:36 - Gem and plugin stack updated
+Updated `Gemfile` and the plugin-related `_config.yml` settings to match the current upstream build stack more closely without changing site content.
