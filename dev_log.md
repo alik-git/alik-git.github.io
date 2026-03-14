@@ -33,3 +33,6 @@ Added `requirements.txt` with `nbconvert` so the new `actions/setup-python` cach
 
 ## 2026-03-14 16:36 - Gem and plugin stack updated
 Updated `Gemfile` and the plugin-related `_config.yml` settings to match the current upstream build stack more closely without changing site content.
+
+## 2026-03-14 16:40 - Plugin compatibility fix
+Removed `jekyll-3rd-party-libraries` after confirming the repo still uses hardcoded third-party asset references and does not define the `third_party_libraries` config block that plugin expects.
