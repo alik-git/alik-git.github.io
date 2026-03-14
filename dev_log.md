@@ -27,3 +27,6 @@ Updated `_config.yml` so the site `url` matches the real custom domain `https://
 
 ## 2026-03-14 16:28 - Deploy workflow updated
 Updated `.github/workflows/deploy.yml` to match current upstream trigger coverage and build toolchain so real site changes in `_sass`, `_scripts`, bibliography files, and gem files reliably trigger deploys.
+
+## 2026-03-14 16:31 - Workflow cache fix
+Added `requirements.txt` with `nbconvert` so the new `actions/setup-python` cache step has the dependency file it expects.
