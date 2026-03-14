@@ -1,12 +1,11 @@
 ---
-layout: cv
+layout: redirect
 permalink: /cv/
-title: CV
+title: cv
+description: My current resume
+rurl: /cv.pdf
 nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav_order: 2
 ---
+
+Placeholder text for the resume page, you should probably not be seeing this lol.
