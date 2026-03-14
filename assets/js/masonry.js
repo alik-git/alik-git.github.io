@@ -3,7 +3,7 @@ $(document).ready(function () {
   var $grid = $(".grid").masonry({
     gutter: 10,
     horizontalOrder: true,
-    itemSelector: ".grid-item",
+    itemSelector: ".col",
   });
   // Layout Masonry after each image loads
   $grid.imagesLoaded().progress(function () {
