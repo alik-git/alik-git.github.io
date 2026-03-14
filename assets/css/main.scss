@@ -37,3 +37,8 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+/* Keep the search shortcut label on one line in narrow desktop widths. */
+#search-toggle .nav-link {
+  white-space: nowrap;
+}
