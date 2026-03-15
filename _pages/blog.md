@@ -1,7 +1,8 @@
 ---
 layout: default
 permalink: /blog/
-title: my blog
+title: blog
+display_title: my blog
 nav: true
 nav_order: 1
 pagination:
@@ -20,8 +21,13 @@ pagination:
 
 {% assign blog_name_size = site.blog_name | size %}
 {% assign blog_description_size = site.blog_description | size %}
+{% assign display_title_size = page.display_title | size %}
 
-{% if blog_name_size > 0 or blog_description_size > 0 %}
+{% if display_title_size > 0 %}
+  <div class="header-bar">
+    <h1>{{ page.display_title }}</h1>
+  </div>
+{% elsif blog_name_size > 0 or blog_description_size > 0 %}
 
   <div class="header-bar">
     <h1>{{ site.blog_name }}</h1>
