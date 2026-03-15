@@ -2,6 +2,21 @@
 
 A simple, clean, and responsive Jekyll theme for academics.
 
+## Ali's Instructions for Ali's Website
+
+- This repository is Ali's personal website built on top of `al-folio`.
+- Prefer editing content files first:
+  - `_pages/`, `_posts/`, `_projects/`, `_news/`, `_bibliography/`, `assets/img/`
+- Avoid unnecessary edits to theme internals:
+  - `_layouts/`, `_includes/`, `_sass/`, `.github/workflows/`
+- Preserve `CNAME` unless explicitly asked to change domain settings.
+- Keep `_config.yml` `url` and `baseurl` consistent with the real deployment target.
+- Do not manually edit the `gh-pages` branch.
+- When syncing with upstream `al-folio`, prefer a migration or selective porting approach rather than rebasing old history.
+- Prefer current upstream `al-folio` defaults over custom overrides unless a customization is clearly still needed.
+- When giving a local preview URL, keep the site running in a separate persistent terminal session.
+- Do not give a local preview URL unless the local server is active and reachable.
+
 ## Quick Links by Role
 
 - **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)
