@@ -54,18 +54,7 @@ ninja.data = [{
               window.location.href = "https://anchor.fm/chatterpractice";
             
           },
-        },{id: "post-visualizing-why-machines-learn",
-        
-          title: "Visualizing Why Machines Learn",
-        
-        description: "Interactive visuals to accompany the book.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/visuallearn/";
-          
-        },
-      },{id: "post-casual-book-review-zero-to-one",
+        },{id: "post-casual-book-review-zero-to-one",
         
           title: "Casual Book Review: Zero to One",
         
