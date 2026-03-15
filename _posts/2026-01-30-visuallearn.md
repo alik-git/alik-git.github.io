@@ -3,6 +3,7 @@ layout: distill
 title: "Visualizing Why Machines Learn"
 description: Interactive visuals to accompany the book. 
 date: 2026-01-30 15:09:00
+published: false
 tags: machine-learning visualization
 authors:
   - name: Ali Kuwajerwala
