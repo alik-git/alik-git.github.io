@@ -32,7 +32,7 @@ Put yourself in his shoes.
 
 Do you know how or even where you would start? If not, wouldn't you like to? 
 
-Deliberate and purposeful---yet witty and informal, Obama walks a tightrope few other authors can. He paints for the reader the _big picture_ of politics; which serves to hold your attention while he saturates it with all the detail and nuance necessary to get a good understanding of the fundamentatals.
+Deliberate and purposeful---yet witty and informal, Obama walks a tightrope few other authors can. He paints for the reader the _big picture_ of politics; which serves to hold your attention while he saturates it with all the detail and nuance necessary to get a good understanding of the fundamentals.
 
 He tackles a wide range of these including but not limited to: nuclear weapons proliferation, the reach and the limits of executive power, the increasing polarization and partisanship of modern politics, the inefficiencies of government, natural disaster response and preparedness, immigration reform, diplomacy and foreign affairs, and of course not to mention healthcare and wall street reform. 
 
@@ -45,6 +45,5 @@ Because, simply put, when you're empowered with a wider perspective on life, you
 I'll leave you with a quote I'm reminded of by the famous philosopher Albert Camus:
 
 >   "Life is the sum of all your choices. <br /> <br />  So, what are you doing today?"
-
 
 

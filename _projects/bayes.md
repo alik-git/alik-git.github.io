@@ -58,7 +58,7 @@ Landscape: [(Direct Link Here)](/assets/img/project_assets/bayes/bayes_poster.pd
 
 
 
-### Github Repo:
+### GitHub Repo:
 
 And you can check out the code [here](https://github.com/MikeS96/bayesbb).
 
@@ -66,7 +66,7 @@ And you can check out the code [here](https://github.com/MikeS96/bayesbb).
 
 ### Project Report:
 
-And a report coming soon! Stay tuned :P
+A full written report is not available yet.
 
 <!-- ### Poster Image (PNG)
 
