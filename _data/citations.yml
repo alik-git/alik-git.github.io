@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-03-14'
+  last_updated: '2026-03-23'
 papers:
   5Q7kQgIAAAAJ:2osOgNQ5qMEC:
-    citations: 463
+    citations: 469
     title: 'Conceptgraphs: Open-vocabulary 3d scene graphs for perception and planning'
     year: '2024'
   5Q7kQgIAAAAJ:UeHWp8X0CEIC:
@@ -10,7 +10,7 @@ papers:
     title: 'Conceptfusion: Open-set multimodal 3d mapping. arXiv 2023'
     year: Unknown Year
   5Q7kQgIAAAAJ:d1gkVwhDpl0C:
-    citations: 365
+    citations: 372
     title: 'Conceptfusion: Open-set multimodal 3d mapping'
     year: '2023'
   5Q7kQgIAAAAJ:qjMakFHDy7sC:
