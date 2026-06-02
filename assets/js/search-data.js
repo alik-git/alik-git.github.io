@@ -18,15 +18,6 @@ ninja.data = [{
               window.location.href = "/blog/";
             
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "My current resume",
-          section: "Navigation",
-          handler: () => {
-            
-              window.location.href = "/cv.pdf";
-            
-          },
         },{id: "nav-papers",
           title: "papers",
           description: "A list of my papers",
