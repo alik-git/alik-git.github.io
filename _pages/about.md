@@ -26,7 +26,7 @@ social: true # includes social icons at the bottom of the page
 
 Hi there! My name is Ali, and I'm passionate about AI, robotics, and philosophy! You could say I'm engaged in the quest to understand and simulate intelligence.
 
-**I am currently actively seeking out full-time roles. I'm open to relocation and non-robotics roles, what matters to me is working on important problems! Take a look at my resume [here][cv]. Please don't hesitate to email me at ali.hqk@x, x=gmail.com, or on Twitter/LinkedIn!**
+**I am currently actively seeking out full-time roles. I'm open to relocation and non-robotics roles; what matters to me is working on important problems. Please don't hesitate to email me at ali.hqk@x, x=gmail.com, or on Twitter/LinkedIn!**
 
 Previously, I was working on deep learning research and [engineering][kscale_eng] for humanoid robots at the startup [K-Scale Labs][kscale]. Before that, I got my master's at [Mila][Mila] & the [University of Montréal][UdeM], supervised by [Liam Paull][lp]. The [ConceptFusion][cf_paper] and [ConceptGraphs][cg_paper] papers which I worked on there are small steps towards building cool world models for robotics.
 
@@ -44,7 +44,6 @@ If you'd like to chat about philosophy, AI, software, physics etc, please feel f
 [UdeM]: https://diro.umontreal.ca/accueil/
 [Mila]: https://mila.quebec/
 [pd]: /podcast
-[cv]: /cv.pdf
 [RVL]: https://rvl.cs.toronto.edu/
 [uoft]: https://www.utoronto.ca/
 [utmr]: https://utmrobotics.com/
