@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI and Robotics, Computer Systems Analyst
+subtitle: Computer Systems Analyst
 
 profile:
   align: right
@@ -24,13 +24,13 @@ social: true # includes social icons at the bottom of the page
 
 ---
 
-Hi there! My name is Ali, and I'm passionate about AI, robotics, and philosophy! You could say I'm engaged in the quest to understand and simulate intelligence.
+Hi there! My name is Ali, and I'm a Computer Systems Analyst focused on analyzing, designing, and optimizing computer systems in robotics and AI environments.
 
-**I am currently actively seeking out full-time roles. I'm open to relocation and non-robotics roles; what matters to me is working on important problems. Please don't hesitate to email me at ali.hqk@x, x=gmail.com, or on Twitter/LinkedIn!**
+**I am currently actively seeking out full-time Computer Systems Analyst roles. I'm open to relocation and adjacent systems-focused roles; what matters to me is working on important problems. Please don't hesitate to email me at ali.hqk@x, x=gmail.com, or on Twitter/LinkedIn!**
 
-Previously, I was working on deep learning research and [engineering][kscale_eng] for humanoid robots at the startup [K-Scale Labs][kscale]. Before that, I got my master's at [Mila][Mila] & the [University of Montréal][UdeM], supervised by [Liam Paull][lp]. The [ConceptFusion][cf_paper] and [ConceptGraphs][cg_paper] papers which I worked on there are small steps towards building cool world models for robotics.
+Previously, I worked on computer systems for humanoid robotics at the startup [K-Scale Labs][kscale]. Before that, I got my master's at [Mila][Mila] & the [University of Montréal][UdeM], supervised by [Liam Paull][lp]. The [ConceptFusion][cf_paper] and [ConceptGraphs][cg_paper] papers which I worked on there are small steps towards building useful system-level representations for robotics.
 
-I also interned at [Amazon][amzn] where I worked on using LLMs to query databases (this was pre ChatGPT). During my undergrad at the [University of Toronto][uoft], I worked on [visual navigation for mobile robots][eq] supervised by [Florian Shkurti][flo]. I've also worked in software engineering roles at [Epson][epsn] and [Liquid Analytics][la].
+I also interned at [Amazon][amzn] where I worked on using LLMs to query databases (this was pre ChatGPT). During my undergrad at the [University of Toronto][uoft], I worked on [visual navigation for mobile robots][eq] supervised by [Florian Shkurti][flo]. I've also worked in systems-focused software roles at [Epson][epsn] and [Liquid Analytics][la].
 
 I also like to code stuff for fun, feel free to take a look at my [github page][gh]. I'm also a big fan of the work of Karl Popper and David Deutsch.
 
