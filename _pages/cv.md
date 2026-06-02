@@ -2,10 +2,8 @@
 layout: page
 permalink: /cv/
 title: cv
-description: My current resume
-redirect: /cv.pdf
-nav: true
-nav_order: 2
+description: Resume removed
+nav: false
 ---
 
-My CV is available [here](/cv.pdf).
+This resume page has been removed.
