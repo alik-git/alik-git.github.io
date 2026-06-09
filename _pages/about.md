@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI and Robotics, Computer Systems Analyst
+subtitle: AI and Robotics, Researcher and Engineer
 
 profile:
   align: right
