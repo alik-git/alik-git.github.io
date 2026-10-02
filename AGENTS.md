@@ -23,7 +23,7 @@
 - Bootstrap compatibility is enabled for existing content. Check desktop/mobile navigation and publication buttons when changing it.
 - Build locally with Ruby 3.3.12 and ImageMagick; Docker is optional and is not used by production deployment. Current commands take precedence over inherited Docker-only instructions.
 - Install Python dependencies from `requirements-build.txt` with `--require-hashes`; use `requirements-citations.txt` only for citation updates. Never replace the lockfiles with an unpinned install.
-- CDN library URLs contain explicit version pins and matching integrity hashes. The legacy downloader is not activated; its css_parser dependency remains indirectly packaged by al_img_tools. `test/runtime_smoke.rb` guards against activating the vulnerable parser. Do not reintroduce the downloader or {{version}} URL placeholders.
+- CDN library URLs contain explicit version pins and matching integrity hashes. The image plugin is pinned to a fork commit that removes its unused downloader dependency. `test/runtime_smoke.rb` rejects css_parser and jekyll-3rd-party-libraries anywhere in the lockfile. Review the fork patch when updating the image plugin, and return to a released gem once upstream removes the dependency. Do not reintroduce the downloader or {{version}} URL placeholders.
 - Production builds run with `JEKYLL_ENV=production`. Do not run PurgeCSS on the prebuilt v1 Tailwind runtime.
 - Automatic deployment occurs only from `master` (or after its citation workflow). PR and reusable workflow builds cannot publish. Preserve the `gh-pages` source and `CNAME`.
 - Before committing: run the formatter, build, upgrade/override checks, generated-site checks, and browser tests. Preserve unrelated content formatting.

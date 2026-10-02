@@ -1,10 +1,13 @@
-# Guard the temporary mitigation for CVE-2026-53727: the legacy CDN downloader
-# is not activated, so its vulnerable transitive parser must not load at boot.
+# Reject the legacy downloader and CSS parser anywhere in the resolved bundle,
+# including dependencies that are installed but never loaded by Jekyll.
+require 'bundler'
 require 'jekyll'
+
+forbidden_dependencies = %w[css_parser jekyll-3rd-party-libraries]
+locked_names = Bundler.locked_gems.specs.map(&:name)
+present = forbidden_dependencies & locked_names
+abort "Legacy downloader dependencies were reintroduced: #{present.join(', ')}" unless present.empty?
 
 Jekyll::PluginManager.require_from_bundler
 Jekyll::Site.new(Jekyll.configuration)
-parser_loaded = $LOADED_FEATURES.any? { |path| path.include?('/css_parser') }
-parser_version = Gem.loaded_specs['css_parser']&.version
-abort 'Vulnerable CSS parser was activated' if parser_loaded && parser_version && parser_version < Gem::Version.new('3.0.0')
-puts 'Runtime starts without activating the vulnerable legacy CSS parser.'
+puts 'Runtime starts without the legacy downloader or CSS parser in its bundle.'

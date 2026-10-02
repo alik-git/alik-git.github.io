@@ -7,6 +7,15 @@ GIT
       jekyll (>= 0.10.0)
       terser (>= 1.0.0)
 
+GIT
+  remote: https://github.com/alik-git/al-img-tools.git
+  revision: 1189e1e1824fe425a0d5de58ed65b3a831df254d
+  ref: 1189e1e1824fe425a0d5de58ed65b3a831df254d
+  branch: fix/remove-unused-downloader
+  specs:
+    al_img_tools (1.0.3)
+      jekyll (>= 3.9, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -67,9 +76,6 @@ GEM
     al_icons (1.0.0)
       jekyll (>= 3.9, < 5.0)
       liquid (>= 4.0, < 6.0)
-    al_img_tools (1.0.3)
-      jekyll (>= 3.9, < 5.0)
-      jekyll-3rd-party-libraries (~> 0.0.1)
     al_marimo (1.0.0)
       jekyll (>= 3.9, < 5.0)
       liquid (>= 4.0, < 6.0)
@@ -120,8 +126,6 @@ GEM
       time (< 1.0)
     csl-styles (2.0.2)
       csl (~> 2.0)
-    css_parser (1.22.0)
-      addressable
     cssminify2 (2.1.0)
     csv (3.3.5)
     date (3.5.1)
@@ -180,10 +184,6 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
-    jekyll-3rd-party-libraries (0.0.1)
-      css_parser (>= 1.6, < 2.0)
-      jekyll (>= 3.6, < 5.0)
-      nokogiri (>= 1.8, < 2.0)
     jekyll (4.4.1)
       addressable (~> 2.4)
       base64 (~> 0.2)
@@ -368,7 +368,7 @@ DEPENDENCIES
   al_folio_distill (= 1.0.3)
   al_folio_upgrade (= 1.0.3)
   al_icons (= 1.0.0)
-  al_img_tools (= 1.0.3)
+  al_img_tools (= 1.0.3)!
   al_marimo (= 1.0.0)
   al_math (= 1.0.2)
   al_newsletter (= 1.0.0)
@@ -414,7 +414,7 @@ CHECKSUMS
   al_folio_distill (1.0.3) sha256=3feb669dd669effec127e1be5385158c5f98062c510980b5c9c802227ec2c247
   al_folio_upgrade (1.0.3) sha256=434ffddb27705852eae0bcaa01a8d007e0ef65472a989d1a33ae759f910f4709
   al_icons (1.0.0) sha256=7a7b6428d18e77b039aa1ae765a3faed0ae27cb646a08c1009b145c31ca5ef2d
-  al_img_tools (1.0.3) sha256=c50dfa206bb4459925cbfc0e7d03b326e7cb1c282200d5d110b6595f4d661cf7
+  al_img_tools (1.0.3)
   al_marimo (1.0.0) sha256=bbd8ce9650c7e8a3b35cbbde8d98eba983f132647f316b3ba2a9bd8abf502434
   al_math (1.0.2) sha256=c9fa6f3e343c0d35782d77fe386461ceff7d12186d9b51e6c92bb186b3d60781
   al_newsletter (1.0.0) sha256=27c914f5fcd0c7fac51a513ab11de7123f05de7ba834206a68ddf2588ede96d3
@@ -433,7 +433,6 @@ CHECKSUMS
   crass (1.0.7) sha256=94868719948664c89ddcaf0a37c65048413dfcb1c869470a5f7a7ceb5390b295
   csl (2.2.1) sha256=624352f1f6f51f1e0b155bd2501ce423f03264495ec259e65c26e00872a195a2
   csl-styles (2.0.2) sha256=a48007d8a60307825de140dc2adaacc0b7186f2d1042f7e839eb47fce051de98
-  css_parser (1.22.0) sha256=f274988a40c6178305530d60e7deb5162f7b5538b701b61b5488fc703e5b40c1
   cssminify2 (2.1.0) sha256=406a0b95fdaab60132c6f1fbb47b4a30f9572d2ef523f806fb94a530d78c2bb1
   csv (3.3.5) sha256=6e5134ac3383ef728b7f02725d9872934f523cb40b961479f69cf3afa6c8e73f
   date (3.5.1) sha256=750d06384d7b9c15d562c76291407d89e368dda4d4fff957eb94962d325a0dc0
@@ -468,7 +467,6 @@ CHECKSUMS
   httparty (0.24.2) sha256=8fca6a54aa0c4aa4303a0fd33e5e2156175d6a5334f714263b458abd7fda9c38
   i18n (1.14.8) sha256=285778639134865c5e0f6269e0b818256017e8cde89993fdfcbfb64d088824a5
   jekyll (4.4.1) sha256=4c1144d857a5b2b80d45b8cf5138289579a9f8136aadfa6dd684b31fe2bc18c1
-  jekyll-3rd-party-libraries (0.0.1) sha256=331f8d53adbb532a27705d9d4fb719c7f306247c56531fa22c0178f4a445a692
   jekyll-archives-v2 (0.0.8) sha256=5584088b4bd188a6099a2f6940c223f037ddb30e70890fcca1da299395584a7d
   jekyll-cache-bust (0.0.1) sha256=538ffe6d48f56d933b435bf32d4fef19ff1082cae7d6d8bc737fc13a9c86ba8c
   jekyll-email-protect (1.1.0) sha256=00d620939c710788ae3f71188ef913e0aa7ff0a5a39f48249213ea6215558c8d

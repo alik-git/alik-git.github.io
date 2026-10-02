@@ -31,9 +31,11 @@ The local overrides preserve the two-photo about layout, contact placement, dire
 
 Docker publishing and upstream-demo badge/TOC workflows are removed. Local Docker development files remain available, but are not part of production deployment and were not validated in this migration.
 
-## Known dependency limitation
+## Image plugin dependency patch
 
-`al_img_tools` 1.0.3 indirectly packages `css_parser` 1.22.0, which has advisory CVE-2026-53727. The downloader is not activated and CDN URLs are explicit; a startup check confirms the vulnerable parser is not loaded. An upstream dependency fix or a maintained plugin patch is still needed to remove the advisory from the lockfile. Ruby dependency audit therefore reports this one dormant build dependency; Node and Python dependency audits are clean.
+`al_img_tools` uses a [one-line dependency patch](https://github.com/alik-git/al-img-tools/commit/1189e1e1824fe425a0d5de58ed65b3a831df254d), pinned to an exact Git commit in `Gemfile`. Its 1.0.3 runtime and assets are unchanged; the patch removes the unused `jekyll-3rd-party-libraries` dependency and its vulnerable `css_parser` package (CVE-2026-53727) from the bundle. `test/runtime_smoke.rb` rejects either dependency if it returns.
+
+Until upstream publishes the dependency fix, image-plugin updates require reviewing the fork against upstream and advancing the pinned commit. Switch back to the released gem once it no longer pulls in the downloader, rerun the build and Ruby audit, and keep the regression guard. CDN URLs remain explicitly pinned; the downloader is not needed by this site.
 
 The manual accessibility check reports the same pre-existing homepage findings as the original site; accessibility cleanup is separate from this migration.
 

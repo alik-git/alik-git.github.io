@@ -49,7 +49,11 @@ group :al_folio_plugins do
     gem 'al_analytics', '= 1.0.2'
     gem 'al_citations', '= 1.0.1'
     gem 'al_ext_posts', '= 1.0.3'
-    gem 'al_img_tools', '= 1.0.3'
+    # Same 1.0.3 runtime; removes the unused downloader dependency (CVE-2026-53727).
+    gem 'al_img_tools', '= 1.0.3',
+        git: 'https://github.com/alik-git/al-img-tools.git',
+        branch: 'fix/remove-unused-downloader',
+        ref: '1189e1e1824fe425a0d5de58ed65b3a831df254d'
     gem 'al_search', '= 1.0.3'
     gem 'al_charts', '= 1.0.1'
     gem 'al_math', '= 1.0.2'
