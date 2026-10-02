@@ -1,6 +1,4 @@
-# Agent Guidelines for al-folio
-
-A simple, clean, and responsive Jekyll theme for academics.
+# Agent Guidelines for Ali's Website
 
 ## Ali's Instructions for Ali's Website
 
@@ -17,80 +15,30 @@ A simple, clean, and responsive Jekyll theme for academics.
 - When giving a local preview URL, keep the site running in a separate persistent terminal session.
 - Do not give a local preview URL unless the local server is active and reachable.
 
-## Quick Links by Role
+## Current runtime and validation
 
-- **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)
-- **Customizing the site?** → See [`.github/agents/customize.agent.md`](.github/agents/customize.agent.md)
-- **Writing documentation?** → See [`.github/agents/docs.agent.md`](.github/agents/docs.agent.md)
-- **Need setup/deployment help?** → [INSTALL.md](INSTALL.md)
-- **Troubleshooting & FAQ?** → [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
-- **Customization & theming?** → [CUSTOMIZE.md](CUSTOMIZE.md)
-- **Quick 5-min start?** → [QUICKSTART.md](QUICKSTART.md)
-
-## Essential Commands
-
-### Local Development (Docker)
-
-The recommended approach is using Docker.
+- This site uses the released al-folio v1.2 plugin contract, with `theme: al_folio_core`. Keep plugin pins in `Gemfile` and activation in `_config.yml` aligned.
+- Default layouts, Sass, JavaScript, search, citations and Distill runtime come from gems. Do not copy old theme trees back into the site.
+- Intentional local overrides preserve the second profile photo, contact placement, direct navigation links, colors and project selector. Review their upstream diff after dependency changes; acknowledge reviewed changes in `.al-folio-overrides.yml`.
+- Bootstrap compatibility is enabled for existing content. Check desktop/mobile navigation and publication buttons when changing it.
+- Build locally with Ruby 3.3.12 and ImageMagick; Docker is optional and is not used by production deployment. Current commands take precedence over inherited Docker-only instructions.
+- Install Python dependencies from `requirements-build.txt` with `--require-hashes`; use `requirements-citations.txt` only for citation updates. Never replace the lockfiles with an unpinned install.
+- CDN library URLs contain explicit version pins and matching integrity hashes. The legacy downloader is not activated; its css_parser dependency remains indirectly packaged by al_img_tools. `test/runtime_smoke.rb` guards against activating the vulnerable parser. Do not reintroduce the downloader or {{version}} URL placeholders.
+- Production builds run with `JEKYLL_ENV=production`. Do not run PurgeCSS on the prebuilt v1 Tailwind runtime.
+- Automatic deployment occurs only from `master` (or after its citation workflow). PR and reusable workflow builds cannot publish. Preserve the `gh-pages` source and `CNAME`.
+- Before committing: run the formatter, build, upgrade/override checks, generated-site checks, and browser tests. Preserve unrelated content formatting.
 
 ```bash
-# Initial setup & start dev server
-docker compose pull && docker compose up
-# Site runs at http://localhost:8080
-
-# Rebuild after changing dependencies or Dockerfile
-docker compose up --build
-
-# Stop containers and free port 8080
-docker compose down
+bundle install
+npm ci
+python3 -m pip install --require-hashes -r requirements-build.txt
+npx --no-install prettier . --write
+bundle exec al-folio upgrade audit
+bundle exec al-folio upgrade overrides audit --fail-on-stale
+JEKYLL_ENV=production bundle exec jekyll build
+python3 bin/check_site.py _site
+npx --no-install playwright install chromium
+npm run test:site
 ```
 
-### Pre-Commit Checklist
-
-Before every commit, you **must** run these steps:
-
-1.  **Format Code:**
-    ```bash
-    # (First time only)
-    npm install --save-dev prettier @shopify/prettier-plugin-liquid
-    # Format all files
-    npx prettier . --write
-    ```
-2.  **Build Locally & Verify:**
-
-    ```bash
-    # Rebuild the site
-    docker compose up --build
-
-    # Verify by visiting http://localhost:8080.
-    # Check navigation, pages, images, and dark mode.
-    ```
-
-## Critical Configuration
-
-When modifying `_config.yml`, these **must be updated together**:
-
-- **Personal site:** `url: https://username.github.io` + `baseurl:` (empty)
-- **Project site:** `url: https://username.github.io` + `baseurl: /repo-name/`
-- **YAML errors:** Quote strings with special characters: `title: "My: Cool Site"`
-
-## Development Workflow
-
-- **Git & Commits:** For commit message format and Git practices, see [.github/GIT_WORKFLOW.md](.github/GIT_WORKFLOW.md).
-- **Code-Specific Instructions:** Consult the relevant instruction file for your code type.
-
-| File Type                                     | Instruction File                                                                                |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Markdown content (`_posts/`, `_pages/`, etc.) | [markdown-content.instructions.md](.github/instructions/markdown-content.instructions.md)       |
-| YAML config (`_config.yml`, `_data/`)         | [yaml-configuration.instructions.md](.github/instructions/yaml-configuration.instructions.md)   |
-| BibTeX (`_bibliography/`)                     | [bibtex-bibliography.instructions.md](.github/instructions/bibtex-bibliography.instructions.md) |
-| Liquid templates (`_includes/`, `_layouts/`)  | [liquid-templates.instructions.md](.github/instructions/liquid-templates.instructions.md)       |
-| JavaScript (`_scripts/`)                      | [javascript-scripts.instructions.md](.github/instructions/javascript-scripts.instructions.md)   |
-
-## Common Issues
-
-For troubleshooting, see:
-
-- [Common Pitfalls & Workarounds](.github/copilot-instructions.md#common-pitfalls--workarounds) in copilot-instructions.md
-- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for detailed solutions
-- [GitHub Issues](https://github.com/alshedivat/al-folio/issues) to search for your specific problem.
+See the upstream [architecture](https://github.com/alshedivat/al-folio/blob/v1.2/docs/ARCHITECTURE.md) and [migration skill](https://github.com/alshedivat/al-folio/blob/v1.2/.agents/skills/al-folio-v1-migration/SKILL.md).

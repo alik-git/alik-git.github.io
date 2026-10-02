@@ -1,6 +1,13 @@
 {
   "devDependencies": {
-    "@shopify/prettier-plugin-liquid": "^1.10.0",
-    "prettier": "^3.8.0"
+    "@playwright/test": "1.56.1",
+    "@shopify/prettier-plugin-liquid": "1.10.0",
+    "axe-core": "4.10.3",
+    "prettier": "3.8.0"
+  },
+  "scripts": {
+    "lint:prettier": "prettier _config.yml .github/workflows/*.yml .github/dependabot.yml .github/copilot-instructions.md _includes/**/*.liquid _layouts/**/*.liquid assets/js/masonry.js test/*.js package.json package-lock.json README.md AGENTS.md --check",
+    "test:site": "playwright test --config test/playwright.config.js",
+    "test:accessibility": "CHECK_ACCESSIBILITY=1 playwright test --config test/playwright.config.js --grep \"manual accessibility\""
   }
 }
