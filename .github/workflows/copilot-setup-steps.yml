@@ -25,24 +25,26 @@ jobs:
     # If you do not check out your code, Copilot will do this for you.
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3.12"
           bundler-cache: true
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.13"
           cache: "pip"
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
-          node-version: "latest"
+          node-version: "22"
           cache: "npm"
 
       - name: Install system dependencies
@@ -52,7 +54,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip3 install --upgrade nbconvert
+          python -m pip install --require-hashes -r requirements-build.txt
 
       - name: Install Node.js dependencies
         run: npm ci

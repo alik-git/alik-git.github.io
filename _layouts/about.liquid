@@ -26,7 +26,7 @@ layout: default
       rounded' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+      30vw, 95vw{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
@@ -34,20 +34,7 @@ layout: default
         {% endif %}
         {% if page.profile.image_long %}
           {% assign profile_image_long_path = page.profile.image_long | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_long_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_long_class = 'img-fluid z-depth-1 rounded' %}
-          {% endif %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=profile_image_long_path
-            class=profile_image_long_class
-            sizes=sizes
-            alt=page.profile.image_long
-            cache_bust=true
-          %}
+          {% include figure.liquid loading="eager" path=profile_image_long_path class=profile_image_class sizes=sizes alt=page.profile.image_long cache_bust=true %}
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
@@ -61,6 +48,7 @@ layout: default
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% social_links %}</div>
+
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
@@ -90,7 +78,11 @@ layout: default
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
+      {% if site.plugins contains 'al_newsletter' %}
+        {% include plugins/al_newsletter_form_center_margin.liquid %}
+      {% else %}
+        {% include newsletter.liquid center=true %}
+      {% endif %}
     {% endif %}
   </article>
 </div>
