@@ -23,6 +23,8 @@ Production validation uses `JEKYLL_ENV=production bundle exec jekyll build`, `py
 
 Pushes to `master` automatically publish checked builds to the existing `gh-pages` branch and `www.alihkw.com`. PR builds are previews and cannot publish. Google Scholar citation updates retain their Monday/Wednesday/Friday schedule and trigger deployment when successful.
 
+GitHub currently marks the scheduled Scholar and CodeQL workflows inactive, and the standalone formatter workflow manually disabled. Re-enable the scheduled workflows when activating this migration. Formatting is also checked inside every deployment build.
+
 Dependabot proposes monthly Ruby, Node, Python and GitHub Actions updates. Plugin versions are exact pins: upgrade the pins and lockfile together, then review `bundle exec al-folio upgrade overrides audit --fail-on-stale` before accepting any changed override. Theme/runtime fixes come from the plugin gems; follow [upstream release notes](https://github.com/alshedivat/al-folio/releases) for new features and starter wiring changes.
 
 The local overrides preserve the two-photo about layout, contact placement, direct CV/podcast navigation, blue accents and project card selector. Bootstrap compatibility currently preserves existing page markup; upstream plans to deprecate it after v1.2, so review that before a later major migration.
