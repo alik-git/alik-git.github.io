@@ -63,6 +63,7 @@ jobs:
         uses: lycheeverse/lychee-action@7cd0af4c74a61395d455af97419279d86aafaede # v2.0.2
         with:
           fail: true
+          lycheeVersion: v0.24.2
           args: --offline --root-dir "${{ github.workspace }}/_site" --no-progress '_site/**/*.html'
       - name: Upload preview build
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
