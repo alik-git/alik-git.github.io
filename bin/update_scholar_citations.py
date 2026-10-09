@@ -42,10 +42,13 @@ def get_scholar_citations() -> None:
     today = datetime.now().strftime("%Y-%m-%d")
 
     # Check if the output file was already updated today
+    existing_data = None
     if os.path.exists(OUTPUT_FILE):
         try:
             with open(OUTPUT_FILE, "r") as f:
                 existing_data = yaml.safe_load(f)
+            if not isinstance(existing_data, dict):
+                existing_data = None
             if (
                 existing_data
                 and "metadata" in existing_data

@@ -19,17 +19,23 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4001
 
 Production validation uses `JEKYLL_ENV=production bundle exec jekyll build`, `python3 bin/check_site.py _site` and `npm run test:site`. See `AGENTS.md` for upgrade and browser setup commands.
 
+`_plugins/css_cache_bust.rb` adds the local Sass entrypoint to the stylesheet cache version. The theme's cache digest covers its partials but omits `assets/css/main.scss`; without this, returning visitors can keep old custom styles after deployment.
+
 ## Updates and deployment
 
 Pushes to `master` automatically publish checked builds to the existing `gh-pages` branch and `www.alihkw.com`. PR builds are previews and cannot publish. Google Scholar citation updates retain their Monday/Wednesday/Friday schedule and trigger deployment when successful.
 
-GitHub currently marks the scheduled Scholar and CodeQL workflows inactive, and the standalone formatter workflow manually disabled. Re-enable the scheduled workflows when activating this migration. Formatting is also checked inside every deployment build.
+Use this workflow for publication; the obsolete manual deployment and PurgeCSS scripts have been removed.
+
+Formatting is checked inside every deployment build.
 
 Dependabot proposes monthly Ruby, Node, Python and GitHub Actions updates. Plugin versions are exact pins: upgrade the pins and lockfile together, then review `bundle exec al-folio upgrade overrides audit --fail-on-stale` before accepting any changed override. Theme/runtime fixes come from the plugin gems; follow [upstream release notes](https://github.com/alshedivat/al-folio/releases) for new features and starter wiring changes.
 
 The local overrides preserve the two-photo about layout, contact placement, direct CV/podcast navigation, blue accents and project card selector. Bootstrap compatibility currently preserves existing page markup; upstream plans to deprecate it after v1.2, so review that before a later major migration.
 
 Docker publishing and upstream-demo badge/TOC workflows are removed. Local Docker development files remain available, but are not part of production deployment and were not validated in this migration.
+
+The local Docker entrypoint runs Jekyll directly and preserves the mounted lockfile. Restart the container after `_config.yml` changes; rebuild the image after dependency changes.
 
 ## Image plugin dependency patch
 

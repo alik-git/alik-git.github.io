@@ -20,7 +20,7 @@ overrides:
     gem_version: 1.0.15
     upstream_path: assets/css/main.scss
     upstream_sha256: 437c6c911c596391413e435dc0ea7095e682e85c572c1fd3fff69f9597455b3e
-    local_sha256: e92dda20a908f7f03757bd9d5bd4e8877273c1e4e0491723f7f9392c12e82203
+    local_sha256: 85dff12c19d4e7a4081004782dadc9d764b2a636337c777cf0ad5000c38f9e28
     acknowledged_at: '2026-10-09'
   assets/js/masonry.js:
     owner: al_folio_core

@@ -60,7 +60,7 @@ You are an expert customization assistant for the al-folio Jekyll academic websi
     - `.github/ISSUE_TEMPLATE/` – GitHub issue templates
   - `.pre-commit-config.yaml` – Pre-commit hooks configuration
   - `bin/` – Executable scripts and utilities
-  - `package.json`, `purgecss.config.js` – Node.js dependencies and build tools
+  - `package.json`, `package-lock.json` – Node.js dependencies and build tools
   - `Gemfile`, `Gemfile.lock`, `.ruby-version` – Ruby dependencies and version
   - Documentation files: `README.md`, `INSTALL.md`, `CUSTOMIZE.md`, `FAQ.md`, `CONTRIBUTING.md`, `QUICKSTART.md`, `ANALYTICS.md`, `SEO.md`, `TROUBLESHOOTING.md`
   - `robots.txt` – SEO and crawler configuration

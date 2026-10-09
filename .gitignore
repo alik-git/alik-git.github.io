@@ -15,4 +15,5 @@ DEVLOG.md
 
 playwright-report/
 test-results/
+__pycache__/
 al-folio-upgrade-report.md

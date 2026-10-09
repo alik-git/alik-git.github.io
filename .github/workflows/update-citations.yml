@@ -23,6 +23,8 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-citations.txt
       - run: python -m pip install --require-hashes -r requirements-citations.txt
+      - name: Check citation cache recovery
+        run: python -m unittest discover -s test -p 'test_citations.py'
       - name: Fetch citations
         run: timeout 90 python bin/update_scholar_citations.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
