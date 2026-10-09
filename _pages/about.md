@@ -26,19 +26,21 @@ social: true # includes social icons at the bottom of the page
 
 Hi there! My name is Ali, and I'm passionate about AI, robotics, and philosophy! You could say I'm engaged in the quest to understand and simulate intelligence.
 
-**I am currently actively seeking out full-time roles. I'm open to relocation and non-robotics roles, what matters to me is working on important problems! Take a look at my resume [here][cv]. Please don't hesitate to email me at ali.hqk@x, x=gmail.com, or on Twitter/LinkedIn!**
+I lead some of the technical work at [Minerva Humanoids][minerva], where we are making robots for some of the world's most dangerous jobs. If you'd like to work with me, you can [join us][minerva_careers].
+
+I also love philosophy, especially the work of Karl Popper and David Deutsch, as well as other strands of epistemology. If you'd like to talk about that, please reach out at **ali.hqk@x, x=gmail.com, or on Twitter/LinkedIn!**
 
 Previously, I was working on deep learning research and [engineering][kscale_eng] for humanoid robots at the startup [K-Scale Labs][kscale]. Before that, I got my master's at [Mila][Mila] & the [University of Montréal][UdeM], supervised by [Liam Paull][lp]. The [ConceptFusion][cf_paper] and [ConceptGraphs][cg_paper] papers which I worked on there are small steps towards building cool world models for robotics.
 
 I also interned at [Amazon][amzn] where I worked on using LLMs to query databases (this was pre ChatGPT). During my undergrad at the [University of Toronto][uoft], I worked on [visual navigation for mobile robots][eq] supervised by [Florian Shkurti][flo]. I've also worked in software engineering roles at [Epson][epsn] and [Liquid Analytics][la].
 
-I also like to code stuff for fun, feel free to take a look at my [github page][gh]. I'm also a big fan of the work of Karl Popper and David Deutsch.
-
-If you'd like to chat about philosophy, AI, software, physics etc, please feel free to reach out! ✌️
+I also like to code stuff for fun, feel free to take a look at my [github page][gh].
 
 [kscale_eng]: https://youtu.be/hXi3b3xXJFw?si=ymYYJ5fsDsTAi6rZ
 [klab]: https://github.com/kscalelabs/IsaacLab
 [kscale]: https://github.com/kscalelabs
+[minerva]: https://www.minervahumanoids.com/
+[minerva_careers]: https://www.minervahumanoids.com/careers
 [lp]: https://liampaull.ca/
 [mlab]: http://montrealrobotics.ca/
 [UdeM]: https://diro.umontreal.ca/accueil/
