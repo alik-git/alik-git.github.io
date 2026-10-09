@@ -42,3 +42,10 @@ html[data-theme="dark"] { --global-theme-color: #4aa3f0; --global-hover-color: #
   .navbar .navbar-collapse-main { visibility: visible; }
 }
 .navbar .navbar-collapse-main.show { visibility: visible; }
+
+/* Frame the new portrait without modifying the original photo. */
+.profile img[src*="/prof_pic_pxl.jpg"] {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 15%;
+}

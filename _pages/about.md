@@ -6,7 +6,7 @@ subtitle: AI and Robotics, Researcher and Engineer
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic_pxl.jpg
   image_long: prof_pic_long.jpg
   image_circular: false # crops the image to make it circular
   # more_info: >
@@ -26,7 +26,7 @@ social: true # includes social icons at the bottom of the page
 
 Hi there! My name is Ali, and I'm passionate about AI, robotics, and philosophy! You could say I'm engaged in the quest to understand and simulate intelligence.
 
-I lead some of the technical work at [Minerva Humanoids][minerva], where we are making robots for some of the world's most dangerous jobs. If you'd like to work with me, you can [join us][minerva_careers].
+I lead some of the technical work at [Minerva Humanoids][minerva], where we are making robots for the world's most dangerous jobs. If you'd like to work with me, you can [join us][minerva_careers].
 
 I also love philosophy, especially the work of Karl Popper and David Deutsch, as well as other strands of epistemology. If you'd like to talk about that, please reach out at **ali.hqk@x, x=gmail.com, or on Twitter/LinkedIn!**
 
